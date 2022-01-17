@@ -1,0 +1,514 @@
+@charset "UTF-8";
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif; "Yu Gothic", YuGothic, Helvetica, Arial,
+  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+  Meiryo, メイリオ, sans-serif;
+  color: #333333;
+  background-color: #e2d7d0;
+}
+
+img {
+  max-width: 100%;
+}
+
+#about, #gallery, #services, #SNS, {
+  padding: 40px 0 56px 0;
+}
+
+.contents{
+  padding-top: 70px;
+}
+
+.contents-inner{
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.col-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-2 div.item {
+  width: calc((100% - 100px)/2);
+  margin: 40px;
+}
+
+/** -----------------------------------
+    テキスト
+-------------------------------------**/
+
+p.title {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	color: #612d1e;
+	margin-bottom: 16px;
+	text-align: center;
+  font-family: Arial;
+}
+
+p.large {
+	font-size: 24px;
+	color: #612d1e;
+	letter-spacing: 0.14em;
+	letter-spacing: 1;
+
+}
+
+p.medium {
+	font-size: 16px;
+	color: #3b1a0a;
+	letter-spacing: 0.06em;
+	line-height: 2;
+;
+}
+
+
+/** -----------------------------------
+    ヘッダー
+-------------------------------------**/
+#header {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	padding: 0px 80px;
+	top: 0;
+	z-index: 1;
+	background-color: #e2d7d0;
+}
+
+h1.header-logo {
+	display: flex;
+	font-size: 24px;
+	color: #612d1e;
+	align-items: center;
+}
+
+
+.gnav-pc-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul.gnav-pc a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul.gnav-pc a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #612d1e;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .5s;
+}
+
+ul.gnav-pc a:hover::after {
+  transform: scale(1, 1);
+}
+
+
+ul.gnav-pc li{
+	list-style: none;
+	display: inline;
+	margin-right: 30px;
+}
+
+ul.gnav-pc a{
+	font-size: 16px;
+	color: #612d1e;
+	letter-spacing: 0.14em;
+}
+
+.button-small-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul.button-small-wrap li {
+	list-style: none;
+	display: inline;
+	margin: 0 10px;
+}
+
+
+
+a.button-small-buy {
+	display: block;
+	width: 140px;
+	height: 31px;
+	background-color: #0641ba;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0.14em;
+	line-height:29px;
+	text-align: center;
+	border-radius: 15px;
+	text-decoration: none;
+	font-weight: bold;
+  transition: .5s;
+
+}
+
+a.button-small-buy:hover {
+  background-color: #fff;
+  color: #0641ba;
+  border: 1px solid #0641ba;
+}
+
+
+a.button-small-sell {
+	display: block;
+	width: 140px;
+	height: 31px;
+	background-color: #00a235;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0.14em;
+	line-height:29px;
+	text-align: center;
+	border-radius: 15px;
+	text-decoration: none;
+	font-weight: bold;
+  transition: .5s;
+
+}
+
+a.button-small-sell:hover {
+  background-color: #fff;
+  color: #00a235;
+  border: 1px solid #00a235;
+
+}
+
+
+#mainvisual {
+	margin: 0 auto;
+	width: 80vw;
+	height: calc(95vh - 70px);
+	background: url(../images/main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+}
+
+
+a.button-large-buy {
+	display: block;
+	width: 272px;
+	height: 56px;
+	background-color: #0641ba;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 0.14em;
+	line-height:56px;
+	text-align: center;
+	border-radius: 28px;
+	text-decoration: none;
+	font-weight: bold;
+  transition: .5s;
+
+}
+
+a.button-large-buy:hover {
+  background-color: #fff;
+  color: #0641ba;
+  border: 1px solid #0641ba;
+}
+
+
+a.button-large-sell {
+	display: block;
+	width: 272px;
+	height: 56px;
+	background-color: #00a235;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 0.14em;
+	line-height:56px;
+	text-align: center;
+	border-radius: 28px;
+	text-decoration: none;
+	font-weight: bold;
+  transition: .5s;
+
+}
+
+a.button-large-sell:hover {
+  background-color: #fff;
+  color: #00a235;
+  border: 1px solid #00a235;
+}
+
+
+ul.button-large-wrap li {
+	list-style: none;
+	float: left;
+	margin: 10px;
+}
+
+div.icon-wrap {
+	position: absolute;
+	right: -8%;
+	top:45%;
+}
+
+div.icon-wrap a {
+ text-decoration: none;
+ color: #612d1e;
+ font-size: 18px;
+ font-weight: bold;
+ display: inline-block;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+
+}
+
+div.icon-wrap a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #612d1e;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .5s;
+}
+
+div.icon-wrap a:hover{
+  color: #fff;
+}
+
+div.icon-wrap a:hover::after {
+  transform: scale(1, 1);
+}
+
+
+p.subcopy {
+	font-size: 36px;
+  font-weight: bold;
+	color: #612d1e;
+	letter-spacing: 0.08em;
+	line-height: 1;
+	margin: 15px;
+  font-family: Arial;
+}
+
+p.subcopy span{
+  background-color: #fff;
+  padding: 8px 18px;
+  line-height: 1.5;
+  -webkit-box-decoration-break: clone;
+}
+
+p.maincopy {
+	font-size: 70px;
+	color: #612d1e;
+	letter-spacing: 0.06em;
+  font-family: Arial;
+  font-weight: bold;
+  background-color: #fff;
+  line-height:1.2;
+  padding: 8px 18px;
+}
+
+div.copy-wrap {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+}
+
+
+/** -----------------------------------
+    ABOUT
+-------------------------------------**/
+
+#about .about-wrap {
+	width: 100%;
+	background-color: #fff;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+
+#about p.title {
+	margin-top: px;
+	margin-bottom: ;
+}
+
+#about p.large {
+	margin-bottom: px;
+}
+
+#about p.medium {
+  width: 960px;
+	margin: 0 auto;
+  margin-left: 10%;
+}
+
+#about p.signeture{
+  text-align: right;
+  margin-right: 10%;
+  color: #3b1a0a;
+}
+
+
+/** -----------------------------------
+    gallery
+-------------------------------------**/
+#gallery p.medium {
+	margin-bottom: 50px;
+}
+
+.image-items{
+	max-width: 80vw;
+	margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.image-items img{
+	margin: 0 7px;
+}
+
+
+/** -----------------------------------
+    services
+-------------------------------------**/
+
+#services  {
+  margin: 70px 0;
+  background-color: #fff;
+}
+
+div.title-number {
+  font-size: 72px;
+  color: #805a4f;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+}
+
+h3.medium {
+  font-size: 24px;
+  letter-spacing: 0.14em;
+  text-align: 30px;
+  color: #805a4f;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#services p.medium {
+  margin-bottom: 30px;
+}
+
+h2.section-title {
+		text-align: center;
+		padding: 10px;
+}
+
+div .button-large {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+/* sns */
+
+#SNS p.title {
+  margin-top: 5px;
+}
+
+#SNS{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.sns-box {
+	width: 50% ;
+}
+
+/* footer */
+
+#footer{
+  height: 50px;
+  width: 100%;
+  background-color: #612d1e;
+}
+
+#footer p{
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  padding-top: 15px;
+}
+
+
+
+
+/* ここから下はもともと記入されていたもの*/
+
+/*===============================================
+PC : 画面の横幅が769px以上
+=================================================*/
+
+.example {
+	font-size: 50px;
+	color: #99293D;
+}
+
+
+
+/*ここからメディアクエリで各デバイスサイズに書き分けます
+CSSは上から下に継承されるので、変化させたいところだけ書けばOK*/
+
+
+
+/*================================================
+Tablet : 画面の横幅が768pxまで
+==================================================*/
+@media screen and (max-width: 768px){
+	.example {
+		font-size: 30px;
+		color: #2D81B1;
+	}
+}
+
+
+/*================================================
+Smartphone :  画面の横幅が640pxまで
+=================================================*/
+@media screen and (max-width:640px){
+	.example {
+		font-size: 20px;
+		color: #AD8651;
+	}
+}
