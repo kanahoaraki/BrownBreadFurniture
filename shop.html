@@ -50,116 +50,39 @@
       </div>
 
     </header>
-
-     <section id="mainvisual" class="contents-inner">
-
-       <div class="copy-wrap">
-
-        <div class="box">
-           <p class="maincopy">
-             Brown Bread Furniture
-           </p>
-        </div>
-
-           <p class="subcopy">
-            <span>
-            mid century modern exporters
-            </span>
-           </p>
-
-        <ul class="button-large-wrap">
-           <li><a class="button-large-buy" href="#">WANT TO BUY</a></li>
-           <li><a class="button-large-sell" href="#">WANT TO SELL</a></li>
-        </ul>
-
-       </div>
-
-       <div class="icon-wrap">
-        <a class="icon" href="">EN/JP</a>
-       </div>
-
-
-    </section>
-
-  <div class="contents">
-    <section id="about" class="contents-inner">
-        <div class="section-inner">
-          <div class="about-wrap">
-          <p class="title">About us</p>
-          <p class="medium">
-            Established 2008 Brown Bread Furniture is a family run business specialising <br> in the worldwide exporting of Teak Mid century Furniture including classic <br> brands from yesteryear which include G Plan, Mcintosh,Nathan, Archie Shine, <br> Meredrew alongside high-end Danish furniture.
-            <br>Thanks for coming to visit our website.<br>
-          </p>
-
-          <p class="signeture">Brown Bread Furniture</p>
-
-        </div>
-    </section>
-
-
-    <section id="gallery" class="contents-inner">
-      <div class="section-inner">
-      <p class="title">Gallery</p>
-      <p class="medium">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-      </p>
-      </div>
-
-      <div class="image-items">
-        <img src="images/furniture1.jpg" alt="家具１">
-        <img src="images/furniture2.jpg" alt="家具2">
-        <img src="images/furniture3.jpg" alt="家具3">
-        <img src="images/furniture4.jpg" alt="家具4">
-        <img src="images/furniture5.jpg" alt="家具5">
-        <img src="images/furniture6.jpg" alt="家具6">
-      </div>
-
-    <section id="services" class="contents-inner">
-      <p class="title">Services</p>
-
-      <!-- 2カラムのレイアウトを作成 -->
-      <section class="col-2">
-
-        <!-- 1つ目:ここから -->
-        <div class="item">
-          <div class="title-number">1</div>
-          <h3 class="medium">Exporting containers</h3>
-          <p class="medium">
-            We are exporting containers across the world. The countries we deal with include.. Japan,New Zealand,USA,Australia,Portugal and many more.
-New customer enquires always welcome (sorry we don’t sell in the U.K.)
-          </p>
-            <div class="button-large">
-              <a class="button-large-buy" href="#">LEARN MORE</a>
-            </div>
-        </div>
-        <!-- 2つ目:ここから -->
-        <div class="item">
-          <div class="title-number">2</div>
-          <h3 class="medium">Buying your stuff</h3>
-          <p class="medium">
-            we are always on the look out for more teak furniture and never stop buying so please feel free to contact us using the buying page if you have any furniture similar to the kind on this site.
-          </p>
-          <div class="button-large">
-            <a class="button-large-sell" href="#">LEARN MORE</a>
-          </div>
-        </div>
-
-      </section>
-    </section>
-
-    <section id="SNS" class="contents-inner">
-      <div class="section-inner">
-        <div class="sns-box">
-
-          <p class="title">Facebook</p>
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbrownbreadfurniture%2F%3Fref%3Dpage_internal&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </div>
-
-
-
-    </section>
-  </div>
-
+<!-- これからはcontact usページのtutorial-->
+<section id="about" class="contents-inner"></section>
+    <div class="container">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="purpose">Purpose</label>
+        <select id="purpose" name="purpose">
+          <option value="buy">Buying</option>
+          <option value="sell">Selling</option>
+          <option value="other">Other</option>
+        </select>
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="japan">Japan</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div> 
+  </section>
     <footer id="footer">
       <p>&copy; 2022 Brown Bread Furniture </p>
     </footer>
