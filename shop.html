@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
   	<!-- ブラウザで表示されるタイトル !-->
-    <title>Bown Bread Furniture</title>
+    <title>Brown Bread Furniture</title>
 
     <!-- スタイルシート -->
     <link href="css/reset.min.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
 
   </head>
-
+<style>
+  #header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: top;
+    padding: 0px 80px;
+    top: 0;
+    z-index: 1;
+    background-color: #e2d7d0;
+  }
+  #about .about-wrap {
+	width: 100%;
+	background-color: #dfcabd;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+</style>
 
   <body>
 
@@ -51,37 +69,41 @@
 
     </header>
 <!-- これからはcontact usページのtutorial-->
-<section id="about" class="contents-inner"></section>
-    <div class="container">
-      <form action="action_page.php">
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="purpose">Purpose</label>
-        <select id="purpose" name="purpose">
-          <option value="buy">Buying</option>
-          <option value="sell">Selling</option>
-          <option value="other">Other</option>
-        </select>
-    
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-          <option value="japan">Japan</option>
-        </select>
-    
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
-    </div> 
+<div class="contents">
+  <section id="about" class="contents-inner">
+      <div class="section-inner">
+        <div class="about-wrap">
+          <div class="container">
+            <form action="action_page.php">
+              <p class="title">Contact Us</p>
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Company Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your companies name..">
+              <label for="purpose">Purpose</label>
+              <select id="purpose" name="purpose">
+                <option value="buy">Buying</option>
+                <option value="sell">Selling</option>
+                <option value="other">Other</option>
+              </select>
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="japan">Japan</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div> 
+
   </section>
     <footer id="footer">
       <p>&copy; 2022 Brown Bread Furniture </p>
@@ -97,17 +119,6 @@
 
 
     //jQueryの記述をここに書く
-
-    $(function(){
-      $('.image-items').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1600,
-        dots: true,
-      });
-
-    });
 
     $(function () {
   $('a[href^="#"]').click(function () {
